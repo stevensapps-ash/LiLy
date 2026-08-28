@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111827"><title>LiLy — AI Receptionist</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><div class="brand"><b>L</b><strong>LiLy</strong></div><span class="online"><i></i> AI Receptionist Online</span></header>
+<main>
+<section class="hero"><div><small>AI RECEPTIONIST</small><h1>Your calls, handled.</h1><p>LiLy answers calls, captures leads, books appointments, and keeps you informed.</p></div><button id="callBtn">＋ Simulate incoming call</button></section>
+<section class="stats"><div><span>Calls today</span><strong id="calls">12</strong></div><div><span>Leads captured</span><strong id="leadsCount">7</strong></div><div><span>Appointments</span><strong>3</strong></div><div><span>Missed calls</span><strong>0</strong></div></section>
+<div class="layout"><section class="card activity"><div class="head"><div><h2>Recent activity</h2><p>What LiLy is doing</p></div><button id="clearBtn" class="link">Clear</button></div><div id="activityList"></div></section>
+<section class="card"><div class="head"><div><h2>Receptionist settings</h2><p>Customize how LiLy answers</p></div></div><label>Business name<input id="business" value="Your Business"></label><label>Greeting<input id="greeting" value="Thanks for calling. This is LiLy. How can I help you today?"></label><label>After-hours<select id="after"><option>Take a message</option><option>Send to voicemail</option><option>Emergency forwarding</option></select></label><button id="saveBtn" class="secondary">Save settings</button><em id="saved"></em></section>
+<section class="card"><div class="head"><div><h2>New leads</h2><p>Captured automatically</p></div></div><div id="leadList"></div></section>
+<section class="card"><div class="head"><div><h2>Call handling</h2><p>Current workflow</p></div></div><div class="steps"><div><b>01</b><span>Answer & greet</span></div><div><b>02</b><span>Understand request</span></div><div><b>03</b><span>Capture caller details</span></div><div><b>04</b><span>Book or notify</span></div></div></section></div>
+</main><script src="app.js"></script></body></html>
